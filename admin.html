@@ -862,7 +862,7 @@
                 logoutLink.addEventListener('click', async (e) => {
                     e.preventDefault();
                     try {
-                        await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
+                        await fetch('https://qr-3-xser.onrender.com/api/auth/logout', { method: 'POST', credentials: 'include' });
                     } catch (e) {}
                     window.location.href = '/login.html';
                 });
@@ -889,4 +889,5 @@
     </script>
 
 </body>
+
 </html>
