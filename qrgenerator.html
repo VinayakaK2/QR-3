@@ -779,7 +779,7 @@
                 }
 
                 try {
-                    const res = await fetch("/api/qr/generate", {
+                    const res = await fetch("https://qr-3-xser.onrender.com/api/qr/generate", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         credentials: "include",
@@ -846,7 +846,7 @@
                 if (!confirm(`Generate QR codes for ${state.tables.length} tables?`)) return;
                 for (const table of state.tables) {
                     try {
-                        await fetch("/api/qr/generate", {
+                        await fetch("https://qr-3-xser.onrender.com/api/qr/generate", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             credentials: "include",
@@ -870,4 +870,5 @@
 
 
 </body>
+
 </html>
