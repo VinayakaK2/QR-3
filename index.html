@@ -625,7 +625,7 @@
                 payload.restoreUserId = restoreId;
             }
             try {
-                const res = await fetch("/api/session/start", {
+                const res = await fetch("https://qr-3-xser.onrender.com/api/session/start", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(payload)
@@ -680,7 +680,7 @@
                 }
             }
             try {
-                const res = await fetch("/api/validate-location", {
+                const res = await fetch("https://qr-3-xser.onrender.com/api/validate-location", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(payload)
@@ -813,4 +813,5 @@
         });
     </script>
 </body>
+
 </html>
